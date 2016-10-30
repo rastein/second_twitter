@@ -14,11 +14,11 @@ import pandas as pd
 import numpy as np
 from textblob import TextBlob, Word
 
-import scipy as sp
-from sklearn.cross_validation import train_test_split, cross_val_score
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn import metrics
+# import scipy as sp
+# from sklearn.cross_validation import train_test_split, cross_val_score
+# from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+# from sklearn.linear_model import LogisticRegression
+# from sklearn import metrics
 from nltk.stem.snowball import SnowballStemmer
 from ipywidgets import widgets
 
