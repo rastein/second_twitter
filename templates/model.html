@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<div class="content">
+		<h1>
+			How often do the 2016 Presidential Candidates <br>
+			use specific words in their Twitter feeds?<br>
+			{% if dt_usage or hrc_usage %}
+			<br>
+			word: {{user_word_cap}}<br>
+			<br>
+			Clinton's Usage: {{ hrc_usage }}<br>
+			Trump's Usage: {{ dt_usage }}<br>
+			<br>
+			{% else %}
+
+				<br>
+				Please enter a word here:
+			{% endif %}
+		</h1>
+	</div>
+
+	{% block page_content %}
+	<div class="content">
+		<form method="POST">
+
+			{{ form.user_word.label }} {{ form.user_word() }}
+
+			<br>
+			{{ form.submit() }}
+		</form>
+	</div>
+	{% endblock %}
+
+
+<script> var i =  [1,2,3] </script>
+{% endblock %}
